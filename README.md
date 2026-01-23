@@ -57,7 +57,7 @@ This experiment focuses on the fundamentals of building an interactive web appli
 
 If EXP1 includes a backend folder, it likely demonstrates a minimal server (Node/Express, Flask, or similar) implementing the API endpoints used by the frontend.
 
- <img src = "C:\Users\samra\OneDrive\Pictures\Screenshots 1\Screenshot 2026-01-23 141741.png" alt = "Image failed to load">
+ <img src = "C:\Users\samra\OneDrive\Pictures\Screenshots 1\Screenshot 2026-01-23 141741.png" alt = "Image failed to load"/>
 
 ---
 
