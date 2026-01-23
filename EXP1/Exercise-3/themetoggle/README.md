@@ -1,12 +1,41 @@
-# React + Vite
+## 📝 Explanation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Theme Toggle component that lets users switch between Light and Dark modes on the client side. The toggle updates the document root with a theme class (e.g., `.dark`) and persists the user's preference in `localStorage`. It respects the system preference via the `prefers-color-scheme` media query when no saved choice exists, and applies smooth CSS transitions for a pleasant UX. Accessibility concerns are handled by updating ARIA attributes and supporting keyboard interaction.
 
-Currently, two official plugins are available:
+Languages & tech used:
+- </> 🟦 HTML — structure & toggle button
+- {} 🎨 CSS — theme variables, transitions, `.dark` styles
+- ƒ ⚡ JavaScript — toggle logic, persistence (`localStorage`), system-preference detection
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Functionality
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🌗 Toggle button
+  - Click or press Enter/Space to switch themes.
+  - Button updates `aria-pressed` / `aria-label` for screen readers.
+
+- 💾 Persistent preference
+  - Selected theme saved to `localStorage` so choice survives page reloads.
+
+- 🖥️ System preference fallback
+  - When no stored preference, the site uses `prefers-color-scheme` to match OS-level theme.
+
+- ✨ Smooth transitions
+  - Color changes use CSS transitions for a non-jarring experience.
+
+- ♿ Accessibility
+  - Keyboard operable toggle and ARIA attributes ensure compatibility with assistive tech.
+
+- 🔁 How it works (high level)
+  1. On page load, script checks `localStorage` for a saved theme.  
+  2. If none, it checks `window.matchMedia('(prefers-color-scheme: dark)')`.  
+  3. The script adds or removes a `.dark` class on `document.documentElement` accordingly.  
+  4. When the user toggles theme, the class is updated and the choice is saved to `localStorage`.
+
+- 📁 Typical files
+  - index.html 📄 — markup and toggle button
+  - styles.css 🎨 — CSS variables and theme rules
+  - script.js ⚙️ — theme detection, toggle handler, persistence
+
+Enjoy customizing the theme behavior and styles — the component is intentionally minimal and easy to extend!```

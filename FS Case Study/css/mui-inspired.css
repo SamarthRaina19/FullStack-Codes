@@ -1,0 +1,362 @@
+/* MUI-Inspired Components for Music Player */
+
+/* Typography */
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MUI-style Cards */
+.mui-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.mui-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+}
+
+.mui-card-content {
+    padding: 16px;
+}
+
+/* MUI-style Buttons */
+.mui-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.mui-button:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.mui-button-contained {
+    color: #fff;
+    background-color: var(--accent-primary);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+.mui-button-contained:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2), 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12);
+}
+
+.mui-button-outlined {
+    color: var(--accent-primary);
+    border: 1px solid rgba(29, 185, 84, 0.5);
+}
+
+.mui-button-outlined:hover {
+    border: 1px solid var(--accent-primary);
+    background-color: rgba(29, 185, 84, 0.04);
+}
+
+/* MUI-style Fab (Floating Action Button) */
+.mui-fab {
+    color: #fff;
+    background-color: var(--accent-primary);
+    padding: 0;
+    font-size: 1.5rem;
+    min-height: 56px;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.mui-fab:hover {
+    background-color: var(--accent-hover);
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,0.2), 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+.mui-fab-small {
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+}
+
+/* MUI-style Chips */
+.mui-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    color: var(--text-primary);
+    background-color: var(--tertiary-bg);
+    border-radius: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    cursor: default;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 1.4375;
+    padding: 0 12px;
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+                box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.mui-chip:hover {
+    background-color: var(--card-hover);
+}
+
+.mui-chip-clickable {
+    cursor: pointer;
+}
+
+.mui-chip-clickable:hover {
+    background-color: var(--card-hover);
+}
+
+/* MUI-style Avatar */
+.mui-avatar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    user-select: none;
+    background-color: var(--tertiary-bg);
+    color: var(--text-primary);
+}
+
+.mui-avatar-large {
+    width: 56px;
+    height: 56px;
+    font-size: 1.5rem;
+}
+
+/* MUI-style List Items */
+.mui-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 8px 16px;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 8px;
+    margin: 2px 0;
+}
+
+.mui-list-item:hover {
+    background-color: var(--card-hover);
+}
+
+.mui-list-item-button {
+    cursor: pointer;
+}
+
+.mui-list-item-button:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* MUI-style Paper */
+.mui-paper {
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+}
+
+.mui-paper-elevation-1 {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,0.12);
+}
+
+.mui-paper-elevation-2 {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12);
+}
+
+/* MUI-style Slider */
+.mui-slider {
+    color: var(--accent-primary);
+    height: 4px;
+    width: 100%;
+    padding: 13px 0;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mui-slider-rail {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--border-medium);
+    opacity: 0.38;
+}
+
+.mui-slider-track {
+    display: block;
+    position: absolute;
+    height: 4px;
+    border-radius: 2px;
+    background-color: currentColor;
+}
+
+.mui-slider-thumb {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -8px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    outline: 0;
+    background-color: currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.mui-slider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(29, 185, 84, 0.16);
+}
+
+/* MUI-style Typography */
+.mui-typography-h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.125rem;
+    line-height: 1.235;
+    letter-spacing: 0.00735em;
+    margin: 0;
+}
+
+.mui-typography-h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    margin: 0;
+}
+
+.mui-typography-h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    margin: 0;
+}
+
+.mui-typography-body1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    margin: 0;
+}
+
+.mui-typography-body2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    margin: 0;
+}
+
+/* MUI-style Ripple Effect */
+@keyframes mui-ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.mui-ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: mui-ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Dark theme adjustments for MUI components */
+.mui-card {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+}
+
+.mui-paper {
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+}
+
+/* Integration with existing music player components */
+.music-card.mui-style {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.music-card.mui-style:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.24);
+    transform: translateY(-2px);
+}
+
+.player-btn.mui-style {
+    border-radius: 50%;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.player-btn.mui-style:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+    transform: scale(1.1);
+}
