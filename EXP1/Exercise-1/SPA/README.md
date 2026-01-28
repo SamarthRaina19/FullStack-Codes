@@ -39,4 +39,4 @@ Icons / technologies at-a-glance
 🟩 Node.js / npm — package management & scripts
 🔍 ESLint — linting and code quality
 
-<img src="screenshots/Exp-1-1.png" alt="Screenshot showing the working of the program" width="700">
+![Working Screenshot](screenshots/Screenshot.png)
