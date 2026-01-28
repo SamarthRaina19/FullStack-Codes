@@ -87,7 +87,6 @@ src/
 ## � Future Roadmap
 
 - [ ] Full Integration of Deezer API (Draft in `src/api/deezer.js`)
-- [ ] Complete "Your Library" page implementation
-- [ ] User Profile settings
 
-![Working Screenshot](Screenshot.png)
+![Working Screenshot](./public/screenshots/Screenshot.png)
+
