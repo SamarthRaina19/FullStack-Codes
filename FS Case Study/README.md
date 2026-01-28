@@ -5,6 +5,7 @@ A modern, responsive music player web application built with **React** and **Vit
 ## 🎵 Features
 
 ### 1. Dynamic Greeting
+
 - The home screen greets you based on your local time:
   - "Good morning" (5 AM - 11 AM)
   - "Good afternoon" (12 PM - 4 PM)
@@ -13,8 +14,9 @@ A modern, responsive music player web application built with **React** and **Vit
 - Updates automatically every minute.
 
 ### 2. Advanced Music Player
+
 - **Playback Controls**: Play, Pause, Previous, Next.
-- **Seek Functionality**: 
+- **Seek Functionality**:
   - Interactive slider to scrub through the song.
 - **Skip Controls**:
   - Rewind 10 seconds (⏮).
@@ -22,17 +24,20 @@ A modern, responsive music player web application built with **React** and **Vit
 - **Time Display**: Shows current playback time and total duration.
 
 ### 3. "Your Playlist" Management
-- **Add/Remove Songs**: 
+
+- **Add/Remove Songs**:
   - Click the Heart icon (🤍/❤️) on any song card to toggle it in your "Your Playlist".
-- **Sidebar View**: 
+- **Sidebar View**:
   - Selected songs appear instantly in the sidebar under "Your Playlist".
   - Shows empty state "No songs added" when clear.
 
 ### 4. Theme Customization
+
 - **Dark Mode**: Toggle between Dark and Light themes using the switch in the Sidebar.
 - **Visuals**: Features animated gradients and glassmorphism effects.
 
 ### 5. Offline Music
+
 - Includes a set of pre-loaded offline tracks for immediate playback:
   - Dark Cyberpunk
   - Ambient Piano
@@ -65,11 +70,13 @@ src/
 ## 🎯 Getting Started
 
 1. **Install Dependencies**
+
    ```bash
    npm install
    ```
 
 2. **Run Development Server**
+
    ```bash
    npm run dev
    ```
@@ -78,6 +85,9 @@ src/
    - Typically http://localhost:5173
 
 ## � Future Roadmap
+
 - [ ] Full Integration of Deezer API (Draft in `src/api/deezer.js`)
 - [ ] Complete "Your Library" page implementation
 - [ ] User Profile settings
+
+![Working Screenshot](Screenshot.png)
