@@ -88,5 +88,5 @@ src/
 
 - [ ] Full Integration of Deezer API (Draft in `src/api/deezer.js`)
 
-![Working Screenshot](./public/screenshots/Screenshot.png)
+![Working Screenshot](screenshots/Screenshot.png)
 
