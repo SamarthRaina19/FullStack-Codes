@@ -25,9 +25,9 @@ text
 Copy code
 src/
 ├── components/
-│   ├── Navbar.jsx
-│   ├── Profile.jsx
-│   └── Dashboard.jsx
+│ ├── Navbar.jsx
+│ ├── Profile.jsx
+│ └── Dashboard.jsx
 ├── App.jsx
 └── main.jsx
 🔧 Installation & Setup
@@ -82,13 +82,13 @@ Copy code
 import { NavLink } from "react-router-dom";
 
 <NavLink
-  to="/dashboard"
-  style={({ isActive }) => (isActive ? activeStyle : linkStyle)}
->
-  Dashboard
-</NavLink>
-Benefits of NavLink
-Highlights active page
+to="/dashboard"
+style={({ isActive }) => (isActive ? activeStyle : linkStyle)}
+
+> Dashboard
+> </NavLink>
+> Benefits of NavLink
+> Highlights active page
 
 Ideal for navigation menus
 
@@ -98,13 +98,13 @@ Improves user experience
 js
 Copy code
 const linkStyle = {
-  color: "white",
-  textDecoration: "none",
+color: "white",
+textDecoration: "none",
 };
 
 const activeStyle = {
-  color: "#38bdf8",
-  textDecoration: "underline",
+color: "#38bdf8",
+textDecoration: "underline",
 };
 🧠 How Routing Works in This App
 User clicks a Link or NavLink
@@ -118,10 +118,10 @@ Corresponding component is rendered
 No page refresh (SPA behavior)
 
 ⚖️ Link vs Routing (Quick Comparison)
-Concept	Purpose
-Link / NavLink	Changes the URL
-Route	Decides what component to render
-Routes	Matches the current URL
+Concept Purpose
+Link / NavLink Changes the URL
+Route Decides what component to render
+Routes Matches the current URL
 
 ✅ Best Practices
 Use Link instead of <a> for internal navigation
@@ -141,4 +141,4 @@ Link navigates, Route renders
 
 NavLink provides active state awareness
 
-![Working Screenshot](screenshots/Screenshot.png)
+![Working Screenshot](screenshot/Screenshot.png)
