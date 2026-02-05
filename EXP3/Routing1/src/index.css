@@ -42,7 +42,7 @@ h1 {
   top: 0;
   position: sticky;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
@@ -102,4 +102,17 @@ h1 {
 
 .content {
   padding-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #f5f3ff 0%, #eef2ff 40%, #ffffff 100%);
+  min-height: 100vh;
 }

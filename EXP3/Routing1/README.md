@@ -16,3 +16,5 @@ Install react-router-dom package.
 Wrap the application with BrowserRouter.
 Define routes using Routes and Route components.
 Navigate between pages without page reload.
+
+![Working Screenshot](screenshots/Screenshot.png)

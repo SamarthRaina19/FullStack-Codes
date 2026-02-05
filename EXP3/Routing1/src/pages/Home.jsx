@@ -1,11 +1,18 @@
+import "../App.css";
+import spiderMan from "../assets/spider-man.jpg";
+
 function Home() {
-    return (
-      <div className="page-container">
-        <h1>Welcome to Home Page</h1>
-        <p>This is the starting point of our single page application.</p>
+  return (
+    <div className="page home">
+      <h1>
+        This is <span className="highlight">Samarth Raina</span>! 🚀
+      </h1>
+
+      <div className="image-container">
+        <img src={spiderMan} alt="Iron Spider" />
       </div>
-    );
-  }
-  
-  export default Home;
-  
+    </div>
+  );
+}
+
+export default Home;

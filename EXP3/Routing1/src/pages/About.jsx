@@ -1,11 +1,13 @@
+import "../App.css";
+
 function About() {
-    return (
-      <div className="page-container">
-        <h1>About Us</h1>
-        <p>This is the About Page. Here you can find information about our application.</p>
-      </div>
-    );
-  }
-  
-  export default About;
-  
+  return (
+    <div className="page">
+      <h1>About This App</h1>
+      <p>
+        This SPA demostrates basic routing as in Experiment 3.1</p>
+    </div>
+  );
+}
+
+export default About;
