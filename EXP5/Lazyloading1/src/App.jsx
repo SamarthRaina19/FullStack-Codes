@@ -5,7 +5,7 @@ const Dash = lazy(() => import("./components/Dashboard"));
 function App() {
   return (
     <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div><h1>Loading Dashboard...</h1></div>}>
         <h1>Lazy Loading in React</h1>
         <Dash />
       </Suspense>
