@@ -16,5 +16,12 @@ public class Student {
     public String getName() { return name; }
     public String getCourse() { return course; }
 
-    public void setId(int id) { this.id = id; }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
 }
