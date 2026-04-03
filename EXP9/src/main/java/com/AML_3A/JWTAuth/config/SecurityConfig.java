@@ -10,23 +10,22 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
-@SuppressWarnings("deprecation")
 public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 
-        http
-        .csrf(csrf -> csrf.disable())
-        .cors(cors -> cors.disable())
-        .formLogin(form -> form.disable())   
-        .httpBasic(basic -> basic.disable()) 
-        .authorizeHttpRequests(auth -> auth
-        		.requestMatchers("/api/**").permitAll()
-                .anyRequest().authenticated()
-        );
-
-        return http.build();
+        return http
+                .csrf(csrf -> csrf.disable())
+                .cors(cors -> cors.disable())
+                .formLogin(form -> form.disable())
+                .httpBasic(basic -> basic.disable())
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/api/login").permitAll()   // ✅ allow login
+                        .requestMatchers("/api/hello").permitAll()   // (optional for now)
+                        .anyRequest().authenticated()
+                )
+                .build();
     }
 
     @Bean
