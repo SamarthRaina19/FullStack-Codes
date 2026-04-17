@@ -21,8 +21,8 @@ public class SecurityConfig {
                 .formLogin(form -> form.disable())
                 .httpBasic(basic -> basic.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/login").permitAll()   // ✅ allow login
-                        .requestMatchers("/api/hello").permitAll()   // (optional for now)
+                        .requestMatchers("/api/login").permitAll()   
+                        .requestMatchers("/api/hello").permitAll()  
                         .anyRequest().authenticated()
                 )
                 .build();
